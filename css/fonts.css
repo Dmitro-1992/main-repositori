@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fons/Roboto-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-display: swap;
+    }
+
+@font-face{
+    font-family:'Roboto';
+    src: url('../fons/Roboto-Medium.ttf') format('ttf');
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face{
+    font-family:'Roboto';
+    src: url('../fons/Roboto-Bold.ttf') format('ttf');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face{
+    font-family:'Roboto';
+    src: url('../fons/Roboto/-Black.ttf') format('ttf');
+    font-weight: 900;
+    font-display: swap;
+}
+@font-face{
+    font-family:'Raleway';
+    src: url('../fons/raleway/-Bold.ttf') format('ttf');
+    font-weight: 700;
+    font-display: swap;
+}
+
+/* font-display: swap; -для того что когда плохой интернет
+ставил другой шрифт пока не загрузит с гугл фонтс*/

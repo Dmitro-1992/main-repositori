@@ -1,0 +1,273 @@
+
+
+@import'./fonts.css';
+
+:root{
+    --color-text: #212121;
+
+    --color-p:#757575;
+
+    --color-text-wait:#FFFFFF;
+
+    --hero-color-title: #FFFFFF;
+
+    --background-color:#FFFFFF;
+
+    --hover-color: #2196F3;
+
+    --button-color: #2196F3;
+
+    --logo-color:#2196F3;
+
+    --logo-black-:#212121;
+
+    --logo-wait:#FFFFFF;
+
+    --connection-color:#757575;
+
+    --footer-contact-color: rgba(255, 255, 255, 0.6);
+}
+
+ body{
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color:var(--background-color);
+    color: var(--color-text);
+   
+ }
+
+
+.container {
+  margin-left: auto;
+   margin-right: auto;
+   width:1200px;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+/*                        ШАПКА----ЛОГОТИП-КЛАС-СПАМ                    */
+.logo-studio{
+color: var(--logo-black-);
+}
+.logo{
+color: var(--logo-color);
+text-decoration: none;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.2;
+/* identical to box height */
+
+letter-spacing: 0.03em;
+}
+ 
+/*                               шапка-----навигация                    */
+
+.navigation-menu{
+list-style: none;  
+}
+.navigation-link {
+text-decoration: none;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--color-text);
+}
+.navigation-link:hover,
+.navigation-link:focus{
+    color: var(--hover-color);
+}
+ /*                               шапка контакты                       */
+.connection-menu{
+    list-style: none;
+}
+.connection-link{
+text-decoration: none;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--connection-color);
+}
+.connection-link:hover,
+.connection-link:focus{
+color: var(--hover-color);
+}
+/*                                герой заголовок h1                     */
+.hero-title{
+    max-width: 1600px;
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+background-color: #212121;
+color: var(--hero-color-title);
+}
+/*                                   кнопка в герой                      */
+.hero-button{
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+background-color: var(--button-color);
+
+color: var(--color-text-wait);
+}
+/* ------------------------------------------------------------------------ */
+/*              секция benefits(приймучества) benefits-list li              */
+.benefits-list{
+    list-style: none;
+}
+/*               секция benefits(приймучества)  заголовок h3              */
+.benefits-title{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+/*                секция benefits(приймучества) абзац p                    */
+
+.benefits-description{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--color-p);
+}
+/* ------------------------------------------------------------------------*/
+/*                секция work (робота)  work-list                    */
+.work-list{
+list-style: none;
+}
+/*                   секция work (робота)  work-list h2 Чем мы занимаемся   */
+.work-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+   }
+/* -------------------------------------------------------------------------*/
+/*                 секция team (команда) h2 Наша команда                    */
+.team-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;  
+}
+/*                    секция team (команда) team-menu ul                   */
+.team-menu{
+    list-style: none;
+}
+/*                    секция team (команда) h3                             */
+.team-our{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+letter-spacing: 0.03em;
+}
+/*                      секция team (команда) team-speciality p             */
+.team-speciality{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-p);
+}
+/* ------------------------------------------------------------------------ */
+/*                        секция футер(подвал) footer-logo"              */
+.footer{
+background-color: var(--logo-black-);
+} 
+.footer-logo{
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 26px;
+line-height: 1.2;
+letter-spacing: 0.03em;
+color: var(--logo-wait);
+text-decoration: none;
+}
+/*                        секция футер(подвал) logo-web               */
+.logo-web{
+ color: var(--logo-color);
+}
+/*                        секция футер(подвал) address-menu ul         */
+.address-menu{
+    list-style: none;
+}
+/*                        секция футер(подвал) address a              */
+.address{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--color-text-wait);
+    text-decoration: none;
+}
+   /*                 секция футер(подвал) contact-menu ul             */
+.contact-menu{
+    list-style: none;
+}
+/*                 секция футер(подвал) contact-link      a            */
+.contact-link{
+    font-family: 'Roboto';
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--footer-contact-color);
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* ---------------------------------------------------------------------- */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/*                               PORTFOLIO                                */
+
+/*                секция  portfolio(портфолио) portfolio-list li         */
+.portfolio-list{
+ list-style: none;
+   
+}
+/*               секция  portfolio(портфолио) prtfolio-button          */
+.portfolio-button{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.6;
+text-align: center;
+letter-spacing: 0.03em;
+}
+.portfolio-button:hover,
+.portfolio-button:focus{
+background-color: var(--hover-color);
+color: var(--color-text-wait);
+}
+/*                          cards-menu       ul                        */
+.cards-menu{
+    list-style: none;
+}
+/*                         cards-title      h2                                   */
+.cards-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+/*                           cards-work      p                       */
+.cards-work{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: var(--color-p);  
+}
