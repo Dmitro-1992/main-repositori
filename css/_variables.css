@@ -1,0 +1,25 @@
+:root{
+    --color-text: #212121;
+
+    --color-p:#757575;
+
+    --color-text-wait:#FFFFFF;
+
+    --hero-color-title: #FFFFFF;
+
+    --background-color:#FFFFFF;
+
+    --hover-color: #2196F3;
+
+    --button-color: #2196F3;
+
+    --logo-color:#2196F3;
+
+    --logo-black-:#212121;
+
+    --logo-wait:#FFFFFF;
+
+    --connection-color:#757575;
+
+    --footer-contact-color: rgba(255, 255, 255, 0.6);
+}

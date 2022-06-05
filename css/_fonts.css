@@ -5,30 +5,29 @@
     font-display: swap;
     }
 
-@font-face{
-    font-family:'Roboto';
+@font-face {
+    font-family: 'Roboto';
     src: url('../fonts/Roboto-Medium.ttf') format('ttf');
     font-weight: 500;
     font-display: swap;
 }
-@font-face{
-    font-family:'Roboto';
+@font-face {
+    font-family: 'Roboto';
     src: url('../fonts/Roboto-Bold.ttf') format('ttf');
     font-weight: 700;
     font-display: swap;
 }
-@font-face{
-    font-family:'Roboto';
-    src: url('../fonts/Roboto/-Black.ttf') format('ttf');
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Black.ttf') format('ttf');
     font-weight: 900;
     font-display: swap;
 }
-@font-face{
-    font-family:'Raleway';
-    src: url('../fonts/raleway/-Bold.ttf') format('ttf');
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/RalewayDots-Regular.ttf')format('ttf');
     font-weight: 700;
+   font-style: normal;
     font-display: swap;
 }
 
-/* font-display: swap; -для того что когда плохой интернет
-ставил другой шрифт пока не загрузит с гугл фонтс*/

@@ -1,36 +1,11 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:wght@400;500;700;900&display=swap'); */
 
-
-@import'./fonts.css';
-
-:root{
-    --color-text: #212121;
-
-    --color-p:#757575;
-
-    --color-text-wait:#FFFFFF;
-
-    --hero-color-title: #FFFFFF;
-
-    --background-color:#FFFFFF;
-
-    --hover-color: #2196F3;
-
-    --button-color: #2196F3;
-
-    --logo-color:#2196F3;
-
-    --logo-black-:#212121;
-
-    --logo-wait:#FFFFFF;
-
-    --connection-color:#757575;
-
-    --footer-contact-color: rgba(255, 255, 255, 0.6);
-}
+   @import './_fonts.css';
+   @import './_variables.css';
+    
 
  body{
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif;
+   font-family: 'Roboto', sans-serif;
     background-color:var(--background-color);
     color: var(--color-text);
    
@@ -47,8 +22,11 @@
 /*                        ШАПКА----ЛОГОТИП-КЛАС-СПАМ                    */
 .logo-studio{
 color: var(--logo-black-);
+font-family: 'Raleway';
 }
-.logo{
+.logo {
+    font-family: 'Raleway';
+font-style: normal;
 color: var(--logo-color);
 text-decoration: none;
 font-weight: 700;
