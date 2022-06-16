@@ -3,29 +3,63 @@
    @import './_fonts.css';
    @import './_variables.css';
     
-
+   *,
+   *::before,
+   *::after {
+     box-sizing: border-box;
+   }
  body{
-   font-family: 'Roboto', sans-serif;
-    background-color:var(--background-color);
-    color: var(--color-text);
-   
- }
-
+  margin: 0;
+  padding: 0;
+  background-color: var(--logo-footer-color);
+  color: var(--primary-text-color);
+      
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.02em;
+  font-size: 14;
+   }
 
 .container {
-  margin-left: auto;
-   margin-right: auto;
-   width:1200px;
-   padding-left: 15px;
-   padding-right: 15px;
+  margin: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  border: 2px dashed #2a2a2a;
 }
+
+h1, h2, h3, p,ul{ 
+    margin: 0;
+    padding: 0;
+  }
+  .section .no-podding {
+    padding-top: 0;
+    padding-bottom: 0;
+    } 
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: o;
+    margin-bottom: o;
+  
+  } 
+
+ul {
+    list-style: none;
+    text-decoration: none;
+   padding: 0;
+   margin: 0;
+} 
+/* --------------------------------------------------------------------- */
 /*                        ШАПКА----ЛОГОТИП-КЛАС-СПАМ                    */
+
 .logo-studio{
 color: var(--logo-black-);
 font-family: 'Raleway';
 }
 .logo {
-    font-family: 'Raleway';
+font-family: 'Raleway';
 font-style: normal;
 color: var(--logo-color);
 text-decoration: none;
@@ -35,12 +69,15 @@ line-height: 1.2;
 /* identical to box height */
 
 letter-spacing: 0.03em;
+
 }
  
 /*                               шапка-----навигация                    */
 
 .navigation-menu{
 list-style: none;  
+display:inline-block;
+
 }
 .navigation-link {
 text-decoration: none;
@@ -57,6 +94,7 @@ color: var(--color-text);
  /*                               шапка контакты                       */
 .connection-menu{
     list-style: none;
+
 }
 .connection-link{
 text-decoration: none;
@@ -70,16 +108,24 @@ color: var(--connection-color);
 .connection-link:focus{
 color: var(--hover-color);
 }
+/* --------------------------------=====-------------------------------- */
 /*                                герой заголовок h1                     */
+.hero{
+padding: 200px 0;
+background-image: url(../images/Img\ hero.jpg);
+background-repeat:no-repeat;
+/* background-repeat:no-repeat;xnj ,что бы не повторялась картинка */
+}
 .hero-title{
-    max-width: 1600px;
+max-width: 1600px;
+width: 696px;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
+margin: 0 auto 40px;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-background-color: #212121;
 color: var(--hero-color-title);
 }
 /*                                   кнопка в герой                      */
@@ -87,18 +133,35 @@ color: var(--hero-color-title);
 font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
+
+justify-content: center;
 align-items: center;
+margin: 0 auto;
 text-align: center;
 letter-spacing: 0.06em;
 background-color: var(--button-color);
-
 color: var(--color-text-wait);
 }
+
 /* ------------------------------------------------------------------------ */
 /*              секция benefits(приймучества) benefits-list li              */
-.benefits-list{
-    list-style: none;
+.benefits{
+padding: 94px 0;
+border: 5px solid tomato;
 }
+
+ /* .benefits-menu{
+ display: flex; 
+}  */
+.benefits-list{
+ list-style: none;
+ width: 270px;
+}
+
+
+
+
+
 /*               секция benefits(приймучества)  заголовок h3              */
 .benefits-title{
   font-weight: 700;
@@ -106,48 +169,82 @@ color: var(--color-text-wait);
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin: 0 0 10px;
 }
 /*                секция benefits(приймучества) абзац p                    */
 
 .benefits-description{
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
+  line-height: 1.7;
   color: var(--color-p);
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 0; 
+  
 }
+/* чем занимаемся */
 /* ------------------------------------------------------------------------*/
-/*                секция work (робота)  work-list                    */
+/*                секция work (робота)  work-list                     */
+
+.work{
+ border: 5px solid tomato;
+ padding-top:94px;
+ padding-bottom: 94px;
+}
+
+.work-title{
+ margin: 0 0 50px;
+ font-weight: 700;
+ font-size: 36px;
+ line-height: 1.17;
+ text-align: center;
+ 
+   }
+
+
+
+
 .work-list{
 list-style: none;
+border: 5px solid tomato;
 }
+.work-list+ .work-list{
+  margin-top: 30px;
+}
+
+
 /*                   секция work (робота)  work-list h2 Чем мы занимаемся   */
-.work-title{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
-   }
+
 /* -------------------------------------------------------------------------*/
 /*                 секция team (команда) h2 Наша команда                    */
+.team{
+    border: 5px solid tomato;
+    padding: 94px 0;
+}
 .team-title{
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
-    letter-spacing: 0.03em;  
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
 /*                    секция team (команда) team-menu ul                   */
 .team-menu{
     list-style: none;
+}
+.team-list+ .team-list{
+  margin-top: 30px;
+  border: 5px solid coral;
+
 }
 /*                    секция team (команда) h3                             */
 .team-our{
 font-weight: 500;
 font-size: 16px;
 line-height: 1.19;
-text-align: center;
+
 letter-spacing: 0.03em;
 }
 /*                      секция team (команда) team-speciality p             */
@@ -155,7 +252,6 @@ letter-spacing: 0.03em;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
-    text-align: center;
     letter-spacing: 0.03em;
     color: var(--color-p);
 }
